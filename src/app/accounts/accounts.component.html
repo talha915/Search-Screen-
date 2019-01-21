@@ -1,0 +1,20 @@
+<h6>Accounts</h6>
+<div style="height: 500px; overflow-y:auto">
+  <mat-card class="cards-style" *ngFor="let accounts of accountsCards">
+    <mat-card-title>
+      {{accounts.header}}
+      <img src="assets/NavBarGlobalQuickCreate_blue.png" mat-button [matMenuTriggerFor]="menu" class="image-style" width="15" height="15">
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item *ngFor="let menu of menuItems">
+          {{menu.name}}
+        </button>
+      </mat-menu>
+    </mat-card-title>
+    <mat-card-content>
+      {{accounts.content}}
+    </mat-card-content>
+    <mat-card-footer class="card-footer-style">
+      {{accounts.footer}}
+    </mat-card-footer>
+  </mat-card>
+</div>

@@ -1,0 +1,18 @@
+.cards-style {
+    width: 50%;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.card-footer-style {
+    margin-left: 5%;
+}
+
+.cards-style:hover {
+    background-color: #dbd0da;
+}
+
+.image-style {
+    cursor: pointer;
+    float: right;
+}

@@ -1,0 +1,7 @@
+<mat-form-field class="filterbar-style">
+  <mat-select placeholder="Select Type of Card" (selectionChange)="onChange($event);">
+    <mat-option *ngFor="let data of filterList" [value]="data.id">
+      {{data.name}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
